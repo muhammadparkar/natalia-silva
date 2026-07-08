@@ -133,7 +133,7 @@ export default function Footer() {
           <div className="md:col-span-4 flex flex-col gap-4">
             <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-slate-blue">Newsletter</span>
             <p className="text-xs text-white/70 leading-relaxed max-w-xs mb-1">
-              Subscribe to receive Natalia's quarterly dispatch on luxury codes, verbal composure, and aesthetic presence.
+              Subscribe to receive Natalia&apos;s quarterly dispatch on luxury codes, verbal composure, and aesthetic presence.
             </p>
 
             <form onSubmit={handleSubscribe} className="relative flex w-full">

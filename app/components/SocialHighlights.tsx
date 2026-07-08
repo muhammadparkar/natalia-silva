@@ -2,12 +2,11 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Heart, MessageCircle, Play, Pause, X, ExternalLink } from 'lucide-react';
+import { Sparkles, Heart, MessageCircle, Play, X, ExternalLink } from 'lucide-react';
 import { socialFeedData, SocialHighlightItem } from '../data/content';
 
 export default function SocialHighlights() {
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [hoveredCardId, setHoveredCardId] = useState<string | null>(null);
   
   // Interactive stats simulation
   const [likesState, setLikesState] = useState<Record<string, number>>(() => {
@@ -118,7 +117,7 @@ export default function SocialHighlights() {
               </span>
               
               <h4 className="text-xl md:text-2xl font-serif text-charcoal leading-snug">
-                "{featuredReel.title}"
+                &ldquo;{featuredReel.title}&rdquo;
               </h4>
               
               <p className="text-xs md:text-sm text-charcoal/80 leading-relaxed font-sans">
@@ -200,8 +199,6 @@ export default function SocialHighlights() {
                   }
                 }}
                 className={`relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-md border border-slate-200/40 cursor-pointer group`}
-                onMouseEnter={() => setHoveredCardId(item.id)}
-                onMouseLeave={() => setHoveredCardId(null)}
               >
                 {/* Media Image */}
                 <img
