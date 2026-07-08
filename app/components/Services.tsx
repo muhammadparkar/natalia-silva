@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { Sparkles, ArrowRight, ShieldCheck, Speech, Sparkle, Award, MessageSquare, Presentation } from 'lucide-react';
 import { servicesData, ServiceItem } from '../data/content';
 
@@ -20,7 +20,7 @@ export default function Services() {
     }
   };
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -30,7 +30,7 @@ export default function Services() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
