@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F7FBFF; /* Ice Blue */
+  --background: #F7F9FC; /* Very soft light blue/gray background */
   --foreground: #2F3A45; /* Charcoal */
 }
 
@@ -11,12 +11,17 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   
+  --color-primary: #0047AB; /* Trust Blue */
+  --color-secondary: #E75480; /* Growth Pink */
+  --color-accent: #A1045A; /* Violet-Magenta */
+  
   --color-sky-blue: #EAF5FF;
   --color-powder-blue: #DCEEFF;
-  --color-ice-blue: #F7FBFF;
+  --color-ice-blue: #F1DDCF; /* Soft Gold/Peach */
   --color-charcoal: #2F3A45;
-  --color-slate-blue: #6E86A6;
+  --color-slate-blue: #607D8B;
   --color-silver: #E2E8F0;
+  --color-soft-gold: #F1DDCF;
   
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Plus Jakarta Sans", sans-serif;

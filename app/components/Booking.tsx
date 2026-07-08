@@ -304,7 +304,7 @@ export default function Booking() {
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder="Natalia Silva"
+                        placeholder="Nataliya Sieverina"
                         className="rounded-xl border border-slate-200/80 bg-white/50 px-4 py-3 text-xs md:text-sm text-charcoal placeholder-slate-400 focus:border-slate-blue focus:outline-none transition-colors"
                       />
                     </div>
@@ -320,7 +320,7 @@ export default function Booking() {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="natalia@advideragroup.com"
+                        placeholder="nataliya@advideragroup.com"
                         className="rounded-xl border border-slate-200/80 bg-white/50 px-4 py-3 text-xs md:text-sm text-charcoal placeholder-slate-400 focus:border-slate-blue focus:outline-none transition-colors"
                       />
                     </div>
@@ -453,7 +453,7 @@ export default function Booking() {
                 </h3>
 
                 <p className="max-w-md text-sm text-charcoal/80 leading-relaxed font-sans mb-8">
-                  Your appointment request has been synchronized with Natalia Silva's schedule. A personal calendar invite with video link options (Google Meet/Zoom) has been dispatched.
+                  Your appointment request has been synchronized with Nataliya Sieverina&apos;s schedule. A personal calendar invite with video link options (Google Meet/Zoom) has been dispatched.
                 </p>
 
                 {/* Receipt Card */}

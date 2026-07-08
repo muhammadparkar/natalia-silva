@@ -43,8 +43,8 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="flex items-center justify-center gap-2 mb-3"
           >
-            <Sparkles className="h-4 w-4 text-slate-blue" />
-            <span className="text-xs uppercase tracking-[0.25em] text-slate-blue font-semibold">The Visionary</span>
+            <Sparkles className="h-4 w-4 text-primary" />
+            <span className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">The Visionary</span>
           </motion.div>
           
           <motion.h2
@@ -54,7 +54,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-5xl font-serif text-charcoal"
           >
-            Meet <span className="italic font-normal text-slate-blue">Natalia Silva</span>
+            Meet <span className="italic font-normal text-primary">Nataliya Sieverina</span>
           </motion.h2>
           <div className="h-[1px] w-24 bg-slate-200 mx-auto mt-6" />
         </div>
@@ -103,7 +103,7 @@ export default function About() {
                 {/* Section Counter */}
                 <motion.span 
                   variants={itemVariants}
-                  className="text-xs font-serif italic text-slate-blue mb-2 font-medium"
+                  className="text-xs font-serif italic text-primary mb-2 font-medium"
                 >
                   Chapter {idx + 1}
                 </motion.span>
@@ -135,7 +135,7 @@ export default function About() {
                       key={bIdx}
                       className="flex items-start gap-3 text-xs md:text-sm text-charcoal/90"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-slate-blue shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                       <span>{bullet}</span>
                     </motion.li>
                   ))}

@@ -4,13 +4,13 @@ import Navbar from "./components/Navbar";
 import LenisScroll from "./components/LenisScroll";
 
 export const metadata: Metadata = {
-  title: "Natalia Silva | Luxury Brand Storyteller, Image & Voice Coach",
-  description: "Sophisticated communication advisory, executive presence, style identity design, and voice training for business leaders, CEOs, and brand strategy professionals.",
-  keywords: ["Luxury Brand Storytelling", "Image Coach", "Voice Coach", "Executive Presence", "Brand Strategy", "Luxury Communication"],
-  authors: [{ name: "Natalia Silva" }],
+  title: "Nataliya Sieverina | Personality Development Coach",
+  description: "Sophisticated personality development, charisma training, presence advisory, self-image design, and vocal command coaching for executives and business leaders.",
+  keywords: ["Personality Development Coach", "Charisma Coaching", "Executive Presence", "Self-Image Curation", "Voice Projection", "Social Poise"],
+  authors: [{ name: "Nataliya Sieverina" }],
   openGraph: {
-    title: "Natalia Silva | Luxury Brand Storyteller, Image & Voice Coach",
-    description: "Refining executive presence, public speaking command, and aesthetic signatures for global professionals.",
+    title: "Nataliya Sieverina | Personality Development Coach",
+    description: "Empowering business leaders and executives with vocal authority, aesthetic signatures, and charismatic self-image design.",
     type: "website",
     locale: "en_US",
   }

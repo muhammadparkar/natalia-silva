@@ -25,9 +25,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-charcoal text-white pt-20 pb-12 overflow-hidden font-sans">
+    <footer className="relative bg-[#141C22] text-white pt-20 pb-12 overflow-hidden font-sans">
       {/* Subtle styling element */}
-      <div className="absolute top-0 right-0 h-[250px] w-[250px] rounded-full bg-slate-blue/10 liquid-glow" />
+      <div className="absolute top-0 right-0 h-[250px] w-[250px] rounded-full bg-[#0047AB]/5 liquid-glow" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -39,12 +39,24 @@ export default function Footer() {
             <a 
               href="#hero"
               onClick={(e) => handleScrollTo(e, '#hero')}
-              className="font-serif text-xl font-semibold tracking-[0.25em] text-white hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2.5 font-serif text-xl font-semibold tracking-[0.25em] text-white hover:opacity-80 transition-opacity"
             >
-              NATALIA SILVA
+              <svg viewBox="0 0 100 100" className="h-6 w-6 shrink-0">
+                <defs>
+                  <linearGradient id="logoGradFoot" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#0047AB" />
+                    <stop offset="50%" stopColor="#A1045A" />
+                    <stop offset="100%" stopColor="#E75480" />
+                  </linearGradient>
+                </defs>
+                <path d="M50 15 C55 25 65 35 50 60 C35 35 45 25 50 15 Z" fill="url(#logoGradFoot)" />
+                <path d="M50 25 C62 32 70 45 62 60 C50 55 50 35 50 25 Z" fill="url(#logoGradFoot)" opacity="0.9" />
+                <path d="M50 25 C38 32 30 45 38 60 C50 55 50 35 50 25 Z" fill="url(#logoGradFoot)" opacity="0.9" />
+              </svg>
+              <span>NATALIYA SIEVERINA</span>
             </a>
             <p className="text-xs text-white/70 leading-relaxed max-w-sm tracking-wide">
-              Luxury Brand Storytelling, Image & Voice Coaching. Curating executive presence and communicative elegance for global business leaders.
+              Personality Development, Charisma & Self-Image Coaching. Curating executive presence and communicative elegance for global business leaders.
             </p>
             
             {/* Social icons */}
@@ -89,14 +101,14 @@ export default function Footer() {
 
           {/* Col 2: Navigation Links (3 cols) */}
           <div className="md:col-span-3 flex flex-col gap-4">
-            <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-slate-blue">Navigation</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#E75480]">Navigation</span>
             <div className="flex flex-col gap-2.5 text-xs text-white/75">
               <a 
                 href="#about" 
                 onClick={(e) => handleScrollTo(e, '#about')}
                 className="hover:text-white transition-colors"
               >
-                About Natalia
+                About Nataliya
               </a>
               <a 
                 href="#services" 
@@ -131,9 +143,9 @@ export default function Footer() {
 
           {/* Col 3: Newsletter signup (4 cols) */}
           <div className="md:col-span-4 flex flex-col gap-4">
-            <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-slate-blue">Newsletter</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#E75480]">Newsletter</span>
             <p className="text-xs text-white/70 leading-relaxed max-w-xs mb-1">
-              Subscribe to receive Natalia&apos;s quarterly dispatch on luxury codes, verbal composure, and aesthetic presence.
+              Subscribe to receive Nataliya&apos;s quarterly dispatch on charisma codes, presence, and vocal command.
             </p>
 
             <form onSubmit={handleSubscribe} className="relative flex w-full">
@@ -143,18 +155,18 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Correspondence Email"
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-xs text-white placeholder-white/40 focus:bg-white/10 focus:border-white/30 focus:outline-none transition-all pr-12"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-xs text-white placeholder-white/40 focus:bg-white/10 focus:border-[#E75480] focus:outline-none transition-all pr-12"
               />
               <button
                 type="submit"
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 h-8 w-8 rounded-lg bg-white text-charcoal flex items-center justify-center hover:bg-slate-blue hover:text-white transition-colors"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 h-8 w-8 rounded-lg bg-[#E75480] text-white flex items-center justify-center hover:bg-[#A1045A] transition-colors"
                 aria-label="Subscribe to newsletter"
               >
                 <ArrowRight className="h-4 w-4" />
               </button>
             </form>
             {subscribed && (
-              <span className="text-[10px] font-semibold text-sky-blue">
+              <span className="text-[10px] font-semibold text-[#E75480]">
                 ✓ Subscription accepted. Welcome to the dispatch list.
               </span>
             )}
@@ -164,7 +176,7 @@ export default function Footer() {
 
         {/* Bottom Details */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 text-[10px] tracking-wider text-white/50 uppercase font-semibold gap-4">
-          <span>© {new Date().getFullYear()} NATALIA SILVA. All Rights Reserved.</span>
+          <span>© {new Date().getFullYear()} NATALIYA SIEVERINA. All Rights Reserved.</span>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

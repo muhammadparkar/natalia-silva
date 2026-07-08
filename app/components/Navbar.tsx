@@ -50,13 +50,28 @@ export default function Navbar() {
       }`}
     >
       <div className="flex items-center justify-between">
-        {/* Brand Name */}
+        {/* Brand Name & Logo */}
         <a 
           href="#hero" 
           onClick={(e) => handleScrollTo(e, '#hero')}
-          className="font-serif text-lg md:text-xl font-semibold tracking-[0.2em] text-charcoal hover:opacity-80 transition-opacity"
+          className="flex items-center gap-2.5 font-serif text-sm md:text-base lg:text-lg font-semibold tracking-[0.2em] text-charcoal hover:opacity-80 transition-opacity"
         >
-          NATALIA SILVA
+          <svg viewBox="0 0 100 100" className="h-7 w-7 shrink-0">
+            <defs>
+              <linearGradient id="logoGradNav" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#0047AB" />
+                <stop offset="50%" stopColor="#A1045A" />
+                <stop offset="100%" stopColor="#E75480" />
+              </linearGradient>
+            </defs>
+            <path d="M50 15 C55 25 65 35 50 60 C35 35 45 25 50 15 Z" fill="url(#logoGradNav)" />
+            <path d="M50 25 C62 32 70 45 62 60 C50 55 50 35 50 25 Z" fill="url(#logoGradNav)" opacity="0.9" />
+            <path d="M50 25 C38 32 30 45 38 60 C50 55 50 35 50 25 Z" fill="url(#logoGradNav)" opacity="0.9" />
+            <path d="M50 35 C70 40 75 52 70 65 C55 60 50 45 50 35 Z" fill="url(#logoGradNav)" opacity="0.8" />
+            <path d="M50 35 C30 40 25 52 30 65 C45 60 50 45 50 35 Z" fill="url(#logoGradNav)" opacity="0.8" />
+          </svg>
+          <span className="hidden sm:inline">NATALIYA SIEVERINA</span>
+          <span className="sm:hidden">N. SIEVERINA</span>
         </a>
 
         {/* Desktop Links */}

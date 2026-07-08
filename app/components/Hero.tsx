@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-ice-blue via-sky-blue/30 to-white pt-24 px-4 sm:px-6 lg:px-8"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-ice-blue via-sky-blue/20 to-white pt-24 px-4 sm:px-6 lg:px-8"
     >
       {/* Decorative ambient glowing background circles */}
       <div className="absolute top-1/4 left-1/4 h-[400px] w-[400px] rounded-full bg-powder-blue/40 liquid-glow" />
@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-slate-blue"
+            className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-primary"
           >
             L'Éloquence et l'Image
           </motion.span>
@@ -45,9 +45,9 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-4xl font-light tracking-tight text-charcoal sm:text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] mb-6"
           >
-            Speak with <span className="italic font-normal text-slate-blue">Confidence.</span>
+            Unlock Your <span className="italic font-normal text-primary">Potential.</span>
             <br />
-            Build a <span className="italic font-normal">Luxury Presence.</span>
+            Cultivate Your <span className="italic font-normal text-secondary">Charisma.</span>
           </motion.h1>
 
           {/* Subheading */}
@@ -82,7 +82,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="group flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-full border border-slate-200 bg-white/40 backdrop-blur-sm px-8 py-4 text-xs font-semibold uppercase tracking-widest text-charcoal shadow-sm transition-all duration-300 hover:bg-white/80 hover:shadow-md hover:border-slate-300"
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-slate-blue group-hover:scale-110 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-secondary group-hover:scale-110 transition-transform duration-300">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
@@ -121,14 +121,14 @@ export default function Hero() {
               
               <img
                 src={heroData.portraitUrl}
-                alt="Natalia Silva"
+                alt="Nataliya Sieverina"
                 className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
               />
 
               {/* Floating Silver Accent Details */}
               <div className="absolute bottom-6 left-6 z-20 glass-card px-4 py-2.5 rounded-2xl flex flex-col">
-                <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-slate-blue">Founder</span>
-                <span className="text-xs uppercase tracking-widest font-serif font-semibold text-charcoal">Natalia Silva</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-primary">Founder</span>
+                <span className="text-xs uppercase tracking-widest font-serif font-semibold text-charcoal">Nataliya Sieverina</span>
               </div>
             </motion.div>
           </motion.div>

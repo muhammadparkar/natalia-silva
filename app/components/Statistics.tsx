@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
-import { motion } from 'framer-motion';
 import { statisticsData, StatisticItem } from '../data/content';
 
 function Counter({ item }: { item: StatisticItem }) {
@@ -53,14 +52,14 @@ function Counter({ item }: { item: StatisticItem }) {
 
   return (
     <div ref={elementRef} className="flex flex-col items-center text-center p-6">
-      <div className="text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal tracking-tight font-light mb-2 flex items-center justify-center">
+      <div className="text-4xl md:text-5xl lg:text-6xl font-serif text-white tracking-tight font-light mb-2 flex items-center justify-center">
         <span>{count}</span>
-        <span className="text-slate-blue font-sans font-medium text-3xl md:text-4xl translate-y-[-4px] ml-0.5">
+        <span className="text-[#E75480] font-sans font-medium text-3xl md:text-4xl translate-y-[-4px] ml-0.5">
           {item.suffix}
         </span>
       </div>
-      <div className="h-[1px] w-8 bg-slate-200 my-3" />
-      <span className="text-[10px] md:text-xs font-semibold uppercase tracking-[0.2em] text-slate-blue">
+      <div className="h-px w-8 bg-white/10 my-3" />
+      <span className="text-[10px] md:text-xs font-semibold uppercase tracking-[0.2em] text-[#E75480]">
         {item.label}
       </span>
     </div>
@@ -69,10 +68,10 @@ function Counter({ item }: { item: StatisticItem }) {
 
 export default function Statistics() {
   return (
-    <section className="relative py-20 bg-sky-blue/20 overflow-hidden border-y border-slate-100">
+    <section className="relative py-20 bg-[#071529] text-white overflow-hidden border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center divide-x divide-slate-200/40">
-          {statisticsData.map((stat, idx) => (
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center divide-x divide-white/10">
+          {statisticsData.map((stat) => (
             <Counter key={stat.id} item={stat} />
           ))}
         </div>
